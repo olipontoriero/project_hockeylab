@@ -1,0 +1,38 @@
+*{ margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ESTILO DE FUENTE */
+ h1, h2, h3, p, a, li, span, div {
+    font-family:"Google Sans Flex", sans-serif;
+ }
+
+header {   
+    height: 50px;
+    background-color: #e7e7e7;
+}
+
+main {background-color: #0b0b85;
+height: 500px;
+}
+
+section {
+    background-color: #1a3092;
+    height: 1400px;
+}
+
+.nino {
+    background-color: #ee1254;
+    height: 500px;
+}
+
+.contenedor_productos {
+    position: relative;
+}
+.contenedor_productos div {
+   height: 150px;
+   width: 150px;
+   border: 2px solid black;
+   margin: 20px 30px 50px 20px;
+}
