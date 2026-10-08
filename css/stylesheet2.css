@@ -455,3 +455,214 @@ footer a:hover {
     }
 
 }
+/* =========================
+   LO MÁS BUSCADO
+========================= */
+
+.mas-buscado {
+    padding: 45px 6% 20px;
+    background-color: white;
+}
+
+.mas-buscado h2 {
+    color: #171bb5;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+.articulos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+
+.articulo {
+    background-color: #c6ff20;
+    border-radius: 6px;
+    padding: 12px;
+    min-height: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.articulo h3 {
+    color: #171bb5;
+    font-size: 11px;
+    line-height: 1.05;
+}
+
+
+.articulo a {
+    background-color: #171bb5;
+    color: white;
+    text-decoration: none;
+
+    width: fit-content;
+
+    padding: 6px 18px;
+
+    border-radius: 15px;
+
+    font-size: 8px;
+    font-weight: bold;
+}
+
+
+
+/* =========================
+   RECUPERAR
+========================= */
+
+.recuperar {
+    padding: 20px 6% 35px;
+    background-color: white;
+}
+
+
+.recuperar h2 {
+    color: #171bb5;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+
+.recuperar img {
+    width: 100%;
+    height: 280px;
+
+    object-fit: cover;
+
+    border-radius: 6px;
+
+    display: block;
+}
+
+
+.recuperar p {
+    color: #171bb5;
+
+    font-size: 8px;
+
+    font-weight: bold;
+
+    text-align: center;
+
+    margin: 8px auto 0;
+
+    max-width: 600px;
+}
+
+
+
+/* =========================
+   ¿LISTA PARA CUIDAR?
+========================= */
+
+.cuidar {
+    padding: 20px 6%;
+}
+
+
+.cuidar a {
+    display: block;
+
+    background-color: #171bb5;
+
+    color: white;
+
+    text-decoration: none;
+
+    text-align: center;
+
+    padding: 16px 10px;
+
+    border-radius: 5px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+
+
+/* =========================
+   EXPLORÁ HOCKEY LAB
+========================= */
+
+.explora {
+    margin: 0 6% 30px;
+
+    display: grid;
+
+    grid-template-columns: 35% 65%;
+
+    background-color: #c6ff20;
+
+    border-radius: 6px;
+
+    overflow: hidden;
+
+    min-height: 125px;
+}
+
+
+.explora-imagen img {
+    width: 100%;
+    height: 100%;
+
+    min-height: 125px;
+
+    object-fit: cover;
+}
+
+
+.explora-texto {
+    position: relative;
+
+    padding: 12px;
+}
+
+
+.explora-texto h2 {
+    color: #171bb5;
+
+    font-size: 24px;
+
+    line-height: 0.95;
+
+    margin: 0;
+}
+
+
+.explora-texto a {
+    position: absolute;
+
+    right: 12px;
+
+    bottom: 10px;
+
+    background-color: #171bb5;
+
+    color: white;
+
+    text-decoration: none;
+
+    width: 55px;
+
+    height: 25px;
+
+    border-radius: 5px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 22px;
+}
