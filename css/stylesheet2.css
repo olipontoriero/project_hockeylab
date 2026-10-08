@@ -666,3 +666,495 @@ footer a:hover {
 
     font-size: 22px;
 }
+/* =========================
+   PÁGINA SECCIONES
+========================= */
+
+.titulo-secciones {
+    text-align: center;
+    padding: 55px 20px 35px;
+}
+
+.titulo-secciones h1 {
+    color: #171bb5;
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+
+.titulo-secciones p {
+    color: #555555;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* LISTADO */
+
+.lista-secciones {
+    width: 82%;
+    max-width: 900px;
+    margin: 0 auto 70px;
+}
+
+
+/* CADA SECCIÓN */
+
+.item-seccion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #171bb5;
+    color: white;
+
+    padding: 25px 30px;
+    margin-bottom: 15px;
+
+    border-radius: 7px;
+}
+
+.item-seccion h2 {
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+
+.item-seccion p {
+    font-size: 12px;
+    margin: 0;
+    color: white;
+}
+
+
+/* FLECHA */
+
+.item-seccion a {
+    width: 45px;
+    height: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #c6ff20;
+
+    color: #171bb5;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.item-seccion a:hover {
+    background-color: white;
+}
+
+
+/* BLOQUE FINAL */
+
+.secciones-final {
+    background-color: #171bb5;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 55px 20px;
+}
+
+.secciones-final h2 {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.secciones-final p {
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+.secciones-final a {
+    display: inline-block;
+
+    background-color: #c6ff20;
+
+    color: #171bb5;
+
+    text-decoration: none;
+
+    padding: 10px 28px;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+
+    font-weight: bold;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 700px) {
+
+    .titulo-secciones h1 {
+        font-size: 30px;
+    }
+
+    .lista-secciones {
+        width: 90%;
+    }
+
+    .item-seccion {
+        padding: 20px;
+    }
+
+    .item-seccion h2 {
+        font-size: 16px;
+    }
+
+}
+/* SOBRE NOSOTROS */
+
+.sobre-titulo {
+    text-align: center;
+    padding: 60px 20px 40px;
+}
+
+.sobre-titulo h1 {
+    color: #171bb5;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.sobre-titulo p {
+    color: #555555;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+.sobre-intro {
+    width: 82%;
+    max-width: 1000px;
+    margin: 0 auto 60px;
+    display: flex;
+    gap: 40px;
+    align-items: stretch;
+}
+
+.sobre-texto {
+    width: 60%;
+}
+
+.sobre-texto h2 {
+    color: #171bb5;
+    font-size: 25px;
+    margin-bottom: 18px;
+}
+
+.sobre-texto p {
+    color: #444444;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.sobre-frase {
+    width: 40%;
+    background-color: #171bb5;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 35px;
+    border-radius: 7px;
+}
+
+.sobre-frase strong {
+    font-size: 25px;
+    line-height: 1.2;
+}
+
+
+.sobre-problema {
+    background-color: #171bb5;
+    color: white;
+    padding: 60px 15%;
+    margin-bottom: 60px;
+}
+
+.sobre-problema h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.sobre-problema p {
+    font-size: 14px;
+    line-height: 1.7;
+    max-width: 850px;
+    margin-bottom: 15px;
+}
+
+
+.sobre-objetivo {
+    width: 82%;
+    max-width: 1000px;
+    margin: 0 auto 70px;
+    display: flex;
+    gap: 30px;
+}
+
+.sobre-objetivo > div {
+    width: 50%;
+    border-top: 4px solid #c6ff20;
+    padding-top: 20px;
+}
+
+.sobre-objetivo h2 {
+    color: #171bb5;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.sobre-objetivo p {
+    color: #444444;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+.sobre-final {
+    background-color: #171bb5;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.sobre-final h2 {
+    font-size: 27px;
+    margin-bottom: 15px;
+}
+
+.sobre-final p {
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.sobre-final a {
+    display: inline-block;
+    background-color: #c6ff20;
+    color: #171bb5;
+    text-decoration: none;
+    padding: 11px 28px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+
+@media (max-width: 700px) {
+
+    .sobre-titulo h1 {
+        font-size: 30px;
+    }
+
+    .sobre-intro {
+        width: 90%;
+        display: block;
+    }
+
+    .sobre-texto,
+    .sobre-frase {
+        width: 100%;
+    }
+
+    .sobre-frase {
+        margin-top: 25px;
+    }
+
+    .sobre-problema {
+        padding: 45px 8%;
+    }
+
+    .sobre-objetivo {
+        width: 90%;
+        display: block;
+    }
+
+    .sobre-objetivo > div {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
+}
+/* CONTACTO */
+
+.contacto-titulo {
+    text-align: center;
+    padding: 60px 20px 40px;
+}
+
+.contacto-titulo h1 {
+    color: #171bb5;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.contacto-titulo p {
+    color: #555555;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+.contacto-contenido {
+    width: 82%;
+    max-width: 1000px;
+    margin: 0 auto 70px;
+    display: flex;
+    gap: 50px;
+}
+
+
+.contacto-info {
+    width: 45%;
+}
+
+.contacto-info h2,
+.formulario h2 {
+    color: #171bb5;
+    font-size: 24px;
+    margin-bottom: 18px;
+}
+
+.contacto-info > p {
+    color: #444444;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+
+.datos-contacto {
+    margin-top: 30px;
+    border-left: 4px solid #c6ff20;
+    padding-left: 20px;
+}
+
+.datos-contacto p {
+    color: #444444;
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+.datos-contacto strong {
+    color: #171bb5;
+    font-size: 11px;
+}
+
+
+.formulario {
+    width: 55%;
+    background-color: #171bb5;
+    padding: 35px;
+    border-radius: 7px;
+}
+
+.formulario h2 {
+    color: white;
+}
+
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.formulario label {
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    margin-top: 12px;
+}
+
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    padding: 12px;
+    font-family: inherit;
+    font-size: 12px;
+    border-radius: 4px;
+    outline: none;
+}
+
+
+.formulario textarea {
+    resize: vertical;
+}
+
+
+.formulario button {
+    margin-top: 20px;
+    width: fit-content;
+    border: none;
+    background-color: #c6ff20;
+    color: #171bb5;
+    padding: 11px 25px;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.formulario button:hover {
+    background-color: white;
+}
+
+
+.contacto-final {
+    background-color: #171bb5;
+    color: white;
+    text-align: center;
+    padding: 55px 20px;
+}
+
+.contacto-final h2 {
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.contacto-final p {
+    font-size: 13px;
+}
+
+
+@media (max-width: 700px) {
+
+    .contacto-titulo h1 {
+        font-size: 30px;
+    }
+
+    .contacto-contenido {
+        width: 90%;
+        display: block;
+    }
+
+    .contacto-info,
+    .formulario {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .formulario {
+        margin-top: 35px;
+    }
+
+}
