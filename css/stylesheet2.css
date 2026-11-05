@@ -32,10 +32,6 @@ header {
     align-items: center;
     justify-content: center;
 
-    background-color: #171bb5;
-
-    border-radius: 50%;
-
     color: white;
 
     text-decoration: none;
@@ -599,7 +595,7 @@ footer a:hover {
 
     display: grid;
 
-    grid-template-columns: 35% 65%;
+    grid-template-columns: 50% 50%;
 
     background-color: #c6ff20;
 
@@ -1157,4 +1153,2381 @@ footer a:hover {
         margin-top: 35px;
     }
 
+}
+
+
+/* ========================================
+   HOCKEY LAB - ORGANIZACIÓN CON FLEXBOX
+   ======================================== */
+
+
+/* LISTADO DE SECCIONES */
+
+.lista-secciones {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+    gap: 20px;
+}
+
+
+/* CADA CAJA DE SECCIÓN */
+
+.item-seccion {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+
+/* TARJETAS DE CONTENIDO */
+
+.seccion-tarjetas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+    gap: 24px;
+}
+
+
+/* CADA TARJETA */
+
+.seccion-card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-self: stretch;
+    flex: 1 1 250px;
+    min-width: 0;
+}
+
+
+/* BOTONES DENTRO DE LAS TARJETAS */
+
+.seccion-card .boton-secciones {
+    align-self: flex-start;
+}
+
+
+/* ADAPTACIÓN A CELULARES */
+
+@media (max-width: 600px) {
+
+    .item-seccion {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .seccion-tarjetas {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        align-content: stretch;
+        gap: 16px;
+    }
+
+    .seccion-card {
+        flex: 1 1 auto;
+        width: 100%;
+    }
+
+    .seccion-card .boton-secciones {
+        align-self: flex-start;
+    }
+}
+
+
+/* ========================================
+   TIPOGRAFÍAS - HOCKEY LAB
+   ======================================== */
+
+/* Tipografía general para toda la web */
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+/* Títulos principales y secundarios */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+}
+
+/* Navegación */
+nav,
+nav a {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+
+/* Botones */
+button,
+.boton-secciones,
+a.boton-secciones {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+.logo img {
+    display: block;
+    width: 125px;
+    height: auto;
+}
+
+
+.logo {
+    background: transparent;
+    border-radius: 0;
+}
+
+.logo::before,
+.logo::after {
+    content: none;
+    display: none;
+}
+
+.logo img {
+    background: transparent;
+    border-radius: 0;
+}
+ 
+/* ===================================
+   PAGINA MOVILIDAD Y ACTIVACION
+=================================== */
+
+.movilidad-page {
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+}
+
+/* ENCABEZADO */
+
+.movilidad-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 25px 5%;
+}
+
+.movilidad-header nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 35px;
+}
+
+.movilidad-header nav a {
+    color: #171BB5;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+/* PORTADA */
+
+.movilidad-portada {
+    background-color: #171BB5;
+    color: white;
+    padding: 90px 8%;
+}
+
+.movilidad-portada-texto {
+    max-width: 750px;
+}
+
+.etiqueta-movilidad {
+    color: #C6FF20;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.movilidad-portada h1 {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 60px;
+    line-height: 0.95;
+    margin: 20px 0;
+}
+
+.movilidad-portada p {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.boton-movilidad {
+    display: inline-block;
+    background-color: #C6FF20;
+    color: #171BB5;
+    text-decoration: none;
+    padding: 13px 22px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+/* INTRODUCCIÓN */
+
+.movilidad-intro {
+    padding: 65px 10%;
+    text-align: center;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.movilidad-intro h2,
+.movilidad-titulo h2,
+.activacion-texto h2,
+.movilidad-consejos h2,
+.movilidad-final h2 {
+    font-family: 'League Spartan', sans-serif;
+    color: #171BB5;
+    font-size: 34px;
+}
+
+.movilidad-intro p {
+    line-height: 1.8;
+    color: #444444;
+}
+
+/* EJERCICIOS */
+
+.movilidad-ejercicios {
+    padding: 60px 7%;
+    background-color: #F5F5F5;
+}
+
+.movilidad-titulo {
+    margin-bottom: 35px;
+}
+
+.movilidad-titulo p {
+    line-height: 1.6;
+}
+
+/* CSS GRID */
+
+.movilidad-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.movilidad-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.movilidad-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    display: block;
+}
+
+.movilidad-card-texto {
+    padding: 22px;
+}
+
+.movilidad-card h3 {
+    font-family: 'League Spartan', sans-serif;
+    color: #171BB5;
+    font-size: 23px;
+}
+
+.movilidad-card p {
+    color: #444444;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* ACTIVACIÓN */
+
+.movilidad-activacion {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 45px;
+    padding: 75px 8%;
+}
+
+.activacion-texto {
+    flex: 1 1 300px;
+}
+
+.activacion-lista {
+    flex: 1 1 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.activacion-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    padding: 18px;
+    border-left: 5px solid #C6FF20;
+    background-color: #F5F5F5;
+}
+
+.activacion-item span {
+    font-family: 'League Spartan', sans-serif;
+    color: #171BB5;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.activacion-item h3 {
+    color: #171BB5;
+    font-family: 'League Spartan', sans-serif;
+    margin-bottom: 5px;
+}
+
+.activacion-item p {
+    font-size: 13px;
+    margin: 0;
+}
+
+/* CONSEJOS */
+
+.movilidad-consejos {
+    background-color: #C6FF20;
+    padding: 65px 7%;
+}
+
+.consejos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.consejo {
+    background-color: white;
+    padding: 25px;
+    border-radius: 6px;
+}
+
+.consejo h3 {
+    color: #171BB5;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.consejo p {
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* CIERRE */
+
+.movilidad-final {
+    background-color: #171BB5;
+    color: white;
+    text-align: center;
+    padding: 65px 7%;
+}
+
+.movilidad-final h2 {
+    color: white;
+}
+
+.movilidad-final p {
+    line-height: 1.7;
+}
+
+.movilidad-footer {
+    background-color: #171BB5;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 700px) {
+
+    .movilidad-header {
+        justify-content: center;
+    }
+
+    .movilidad-header nav {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .movilidad-portada {
+        padding: 60px 7%;
+    }
+
+    .movilidad-portada h1 {
+        font-size: 42px;
+    }
+
+    .movilidad-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .movilidad-activacion {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .consejos-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* PREPARACION PREPARTIDO */
+
+.movilidad-prepartido {
+    padding: 65px 7%;
+    background-color: #171BB5;
+    color: white;
+}
+
+.movilidad-prepartido h2 {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 36px;
+    color: #C6FF20;
+}
+
+.movilidad-prepartido > p {
+    line-height: 1.7;
+    max-width: 750px;
+}
+
+/* GRID DE LA RUTINA */
+
+.prepartido-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-top: 30px;
+}
+
+.prepartido-item {
+    background-color: white;
+    color: #222222;
+    padding: 22px;
+    border-radius: 6px;
+}
+
+.prepartido-item span {
+    color: #171BB5;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.prepartido-item h3 {
+    color: #171BB5;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.prepartido-item p {
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+/* REPETICIONES EN TARJETAS */
+
+.movilidad-card-texto span {
+    display: inline-block;
+    margin-top: 12px;
+    color: #171BB5;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* ADAPTACIÓN A TABLETS Y CELULARES */
+
+@media (max-width: 900px) {
+    .prepartido-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .prepartido-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================
+   PREVENCION
+========================= */
+
+.prevencion-page {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    color: #171BB5;
+    background: #FFFFFF;
+}
+
+.prevencion-page h1,
+.prevencion-page h2,
+.prevencion-page h3,
+.prevencion-logo {
+    font-family: 'League Spartan', sans-serif;
+}
+
+.prevencion-header {
+    background: #171BB5;
+    color: white;
+    padding: 22px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.prevencion-logo {
+    color: #C6FF20;
+    font-size: 27px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.prevencion-header nav {
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+
+.prevencion-header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.prevencion-header nav a:hover {
+    color: #C6FF20;
+}
+
+.prevencion-portada {
+    background: #171BB5;
+    color: white;
+    padding: 65px 7% 85px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 45px;
+}
+
+.prevencion-portada-texto h1 {
+    font-size: clamp(55px, 8vw, 100px);
+    line-height: 0.9;
+    margin: 20px 0;
+}
+
+.prevencion-etiqueta,
+.prevencion-intro > span,
+.prevencion-titulo > span,
+.prevencion-habitos-texto > span,
+.prevencion-alerta-texto > span,
+.prevencion-rutina > span {
+    color: #C6FF20;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.prevencion-portada-texto p {
+    max-width: 480px;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+.prevencion-boton {
+    display: inline-block;
+    background: #C6FF20;
+    color: #171BB5;
+    text-decoration: none;
+    padding: 15px 23px;
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.prevencion-portada-imagen img {
+    width: 100%;
+    height: 390px;
+    object-fit: cover;
+    display: block;
+}
+
+.prevencion-intro {
+    padding: 85px 15%;
+    text-align: center;
+}
+
+.prevencion-intro > span,
+.prevencion-titulo > span {
+    color: #171BB5;
+}
+
+.prevencion-intro h2 {
+    font-size: clamp(32px, 5vw, 55px);
+    margin: 18px 0;
+}
+
+.prevencion-intro p {
+    max-width: 760px;
+    margin: auto;
+    line-height: 1.8;
+    color: #555;
+}
+
+.prevencion-lesiones {
+    background: #F3F3F3;
+    padding: 75px 7%;
+}
+
+.prevencion-titulo {
+    margin-bottom: 40px;
+}
+
+.prevencion-titulo h2,
+.prevencion-habitos h2,
+.prevencion-alerta h2,
+.prevencion-rutina h2 {
+    font-size: clamp(34px, 5vw, 55px);
+    margin: 15px 0;
+}
+
+.prevencion-titulo p {
+    color: #555;
+    line-height: 1.7;
+}
+
+.prevencion-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.prevencion-card {
+    background: white;
+}
+
+.prevencion-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+}
+
+.prevencion-card-texto {
+    padding: 25px;
+}
+
+.prevencion-card-texto > span {
+    color: #171BB5;
+    font-weight: 800;
+    font-size: 13px;
+}
+
+.prevencion-card-texto h3 {
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+.prevencion-card-texto p {
+    color: #555;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.prevencion-habitos {
+    padding: 85px 10%;
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 70px;
+    align-items: start;
+}
+
+.prevencion-habitos-texto > span {
+    color: #171BB5;
+}
+
+.prevencion-habitos-texto h2 {
+    line-height: 1;
+}
+
+.prevencion-habitos-texto p {
+    color: #555;
+    line-height: 1.7;
+}
+
+.prevencion-habitos-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.prevencion-habito {
+    display: flex;
+    gap: 22px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.prevencion-habito > span {
+    background: #C6FF20;
+    color: #171BB5;
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+}
+
+.prevencion-habito h3 {
+    margin: 0 0 8px;
+    font-size: 23px;
+}
+
+.prevencion-habito p {
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.prevencion-alerta {
+    background: #171BB5;
+    color: white;
+    padding: 80px 7%;
+}
+
+.prevencion-alerta-texto {
+    max-width: 700px;
+    margin-bottom: 40px;
+}
+
+.prevencion-alerta-texto h2 {
+    line-height: 1;
+}
+
+.prevencion-alerta-texto p {
+    line-height: 1.7;
+}
+
+.prevencion-alerta-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.prevencion-alerta-item {
+    border-top: 3px solid #C6FF20;
+    padding: 20px 5px;
+}
+
+.prevencion-alerta-item h3 {
+    color: #C6FF20;
+    font-size: 22px;
+}
+
+.prevencion-alerta-item p {
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.prevencion-aclaracion {
+    margin-top: 35px;
+    max-width: 850px;
+    font-size: 13px;
+    line-height: 1.7;
+    color: #DADCFD;
+}
+
+.prevencion-rutina {
+    padding: 80px 7%;
+}
+
+.prevencion-rutina > span {
+    color: #171BB5;
+}
+
+.prevencion-rutina h2 {
+    max-width: 750px;
+    margin-bottom: 40px;
+}
+
+.prevencion-rutina-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.prevencion-rutina-grid > div {
+    background: #F3F3F3;
+    padding: 30px;
+    border-bottom: 5px solid #C6FF20;
+}
+
+.prevencion-rutina-grid span {
+    color: #171BB5;
+    font-weight: 800;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.prevencion-rutina-grid h3 {
+    font-size: 30px;
+    margin: 15px 0 10px;
+}
+
+.prevencion-rutina-grid p {
+    color: #555;
+    line-height: 1.7;
+}
+
+.prevencion-final {
+    background: #C6FF20;
+    color: #171BB5;
+    text-align: center;
+    padding: 65px 10%;
+}
+
+.prevencion-final h2 {
+    font-size: clamp(35px, 5vw, 58px);
+    margin: 0 auto 15px;
+    max-width: 900px;
+}
+
+.prevencion-final p {
+    font-weight: 600;
+}
+
+.prevencion-footer {
+    background: #171BB5;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+    .prevencion-portada,
+    .prevencion-habitos {
+        grid-template-columns: 1fr;
+    }
+
+    .prevencion-alerta-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .prevencion-portada-imagen img {
+        height: 320px;
+    }
+}
+
+/* CELULAR */
+@media (max-width: 600px) {
+    .prevencion-header {
+        padding: 20px 5%;
+    }
+
+    .prevencion-header nav {
+        gap: 14px;
+    }
+
+    .prevencion-portada,
+    .prevencion-lesiones,
+    .prevencion-alerta {
+        padding: 50px 6%;
+    }
+
+    .prevencion-grid,
+    .prevencion-alerta-grid,
+    .prevencion-rutina-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .prevencion-intro,
+    .prevencion-habitos,
+    .prevencion-rutina {
+        padding: 55px 7%;
+    }
+
+    .prevencion-portada-imagen img {
+        height: 250px;
+    }
+}
+
+/* =========================
+   RECUPERACION
+========================= */
+
+.recuperacion-page {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    color: #171BB5;
+    background: #FFFFFF;
+}
+
+.recuperacion-page h1,
+.recuperacion-page h2,
+.recuperacion-page h3,
+.recuperacion-logo {
+    font-family: 'League Spartan', sans-serif;
+}
+
+.recuperacion-header {
+    background: #171BB5;
+    color: white;
+    padding: 22px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.recuperacion-logo {
+    color: #C6FF20;
+    font-size: 27px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.recuperacion-header nav {
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+
+.recuperacion-header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.recuperacion-header nav a:hover {
+    color: #C6FF20;
+}
+
+.recuperacion-portada {
+    background: #171BB5;
+    color: white;
+    padding: 65px 7% 85px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 45px;
+}
+
+.recuperacion-portada-texto > span,
+.recuperacion-intro > span,
+.recuperacion-titulo > span,
+.recuperacion-guia-texto > span,
+.recuperacion-herramientas-titulo > span,
+.recuperacion-sueno-texto > span {
+    color: #C6FF20;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.recuperacion-portada-texto h1 {
+    font-size: clamp(55px, 8vw, 100px);
+    line-height: 0.9;
+    margin: 20px 0;
+}
+
+.recuperacion-portada-texto p {
+    max-width: 480px;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+.recuperacion-boton {
+    display: inline-block;
+    background: #C6FF20;
+    color: #171BB5;
+    text-decoration: none;
+    padding: 15px 23px;
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.recuperacion-portada-imagen img {
+    width: 100%;
+    height: 390px;
+    object-fit: cover;
+    display: block;
+}
+
+.recuperacion-intro {
+    padding: 85px 15%;
+    text-align: center;
+}
+
+.recuperacion-intro > span,
+.recuperacion-titulo > span {
+    color: #171BB5;
+}
+
+.recuperacion-intro h2 {
+    font-size: clamp(32px, 5vw, 55px);
+    margin: 18px 0;
+}
+
+.recuperacion-intro p {
+    max-width: 760px;
+    margin: auto;
+    line-height: 1.8;
+    color: #555;
+}
+
+.recuperacion-pilares {
+    background: #F3F3F3;
+    padding: 75px 7%;
+}
+
+.recuperacion-titulo {
+    margin-bottom: 40px;
+}
+
+.recuperacion-titulo h2,
+.recuperacion-guia h2,
+.recuperacion-herramientas h2,
+.recuperacion-sueno h2 {
+    font-size: clamp(34px, 5vw, 55px);
+    margin: 15px 0;
+}
+
+.recuperacion-titulo p {
+    color: #555;
+    line-height: 1.7;
+}
+
+.recuperacion-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.recuperacion-card {
+    background: white;
+}
+
+.recuperacion-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+}
+
+.recuperacion-card > div {
+    padding: 25px;
+}
+
+.recuperacion-card > div > span {
+    color: #171BB5;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.recuperacion-card h3 {
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+.recuperacion-card p {
+    color: #555;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.recuperacion-guia {
+    padding: 85px 10%;
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 70px;
+    align-items: start;
+}
+
+.recuperacion-guia-texto > span {
+    color: #171BB5;
+}
+
+.recuperacion-guia-texto h2 {
+    line-height: 1;
+}
+
+.recuperacion-guia-texto p {
+    color: #555;
+    line-height: 1.7;
+}
+
+.recuperacion-pasos {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.recuperacion-paso {
+    display: flex;
+    gap: 22px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.recuperacion-paso > span {
+    background: #C6FF20;
+    color: #171BB5;
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+}
+
+.recuperacion-paso h3 {
+    margin: 0 0 8px;
+    font-size: 23px;
+}
+
+.recuperacion-paso p {
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.recuperacion-herramientas {
+    background: #171BB5;
+    color: white;
+    padding: 80px 7%;
+}
+
+.recuperacion-herramientas-titulo {
+    max-width: 750px;
+    margin-bottom: 40px;
+}
+
+.recuperacion-herramientas-titulo h2 {
+    line-height: 1;
+}
+
+.recuperacion-herramientas-titulo p {
+    line-height: 1.7;
+}
+
+.recuperacion-herramientas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.recuperacion-herramienta {
+    background: white;
+    color: #171BB5;
+    padding-bottom: 25px;
+}
+
+.recuperacion-herramienta img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+}
+
+.recuperacion-herramienta h3 {
+    font-size: 25px;
+    padding: 0 22px;
+    margin: 22px 0 10px;
+}
+
+.recuperacion-herramienta p {
+    color: #555;
+    line-height: 1.7;
+    padding: 0 22px;
+    margin: 0;
+}
+
+.recuperacion-sueno {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 55px;
+    padding: 85px 7%;
+}
+
+.recuperacion-sueno-imagen img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    display: block;
+}
+
+.recuperacion-sueno-texto > span {
+    color: #171BB5;
+}
+
+.recuperacion-sueno-texto h2 {
+    line-height: 1;
+}
+
+.recuperacion-sueno-texto p {
+    color: #555;
+    line-height: 1.8;
+}
+
+.recuperacion-final {
+    background: #C6FF20;
+    color: #171BB5;
+    text-align: center;
+    padding: 65px 10%;
+}
+
+.recuperacion-final h2 {
+    font-size: clamp(35px, 5vw, 58px);
+    margin: 0 auto 15px;
+    max-width: 900px;
+}
+
+.recuperacion-final p {
+    font-weight: 600;
+}
+
+.recuperacion-footer {
+    background: #171BB5;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+    .recuperacion-portada,
+    .recuperacion-guia,
+    .recuperacion-sueno {
+        grid-template-columns: 1fr;
+    }
+
+    .recuperacion-herramientas-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .recuperacion-portada-imagen img {
+        height: 320px;
+    }
+}
+
+/* CELULAR */
+@media (max-width: 600px) {
+    .recuperacion-header {
+        padding: 20px 5%;
+    }
+
+    .recuperacion-header nav {
+        gap: 14px;
+    }
+
+    .recuperacion-portada,
+    .recuperacion-pilares,
+    .recuperacion-herramientas {
+        padding: 50px 6%;
+    }
+
+    .recuperacion-grid,
+    .recuperacion-herramientas-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .recuperacion-intro,
+    .recuperacion-guia,
+    .recuperacion-sueno {
+        padding: 55px 7%;
+    }
+
+    .recuperacion-portada-imagen img {
+        height: 250px;
+    }
+
+    .recuperacion-sueno-imagen img {
+        height: 280px;
+    }
+}
+
+
+/* =========================
+   BIENESTAR
+========================= */
+
+.bienestar-page {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    color: #171BB5;
+    background: #FFFFFF;
+}
+
+.bienestar-page h1,
+.bienestar-page h2,
+.bienestar-page h3,
+.bienestar-logo {
+    font-family: 'League Spartan', sans-serif;
+}
+
+.bienestar-header {
+    background: #171BB5;
+    color: white;
+    padding: 22px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.bienestar-logo {
+    color: #C6FF20;
+    font-size: 27px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.bienestar-header nav {
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+
+.bienestar-header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.bienestar-header nav a:hover {
+    color: #C6FF20;
+}
+
+.bienestar-portada {
+    background: #171BB5;
+    color: white;
+    padding: 65px 7% 85px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 45px;
+}
+
+.bienestar-portada-texto > span,
+.bienestar-intro > span,
+.bienestar-titulo > span,
+.bienestar-ciclo-texto > span,
+.bienestar-equilibrio-texto > span,
+.bienestar-consejos-titulo > span {
+    color: #C6FF20;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.bienestar-portada-texto h1 {
+    font-size: clamp(55px, 8vw, 100px);
+    line-height: 0.9;
+    margin: 20px 0;
+}
+
+.bienestar-portada-texto p {
+    max-width: 480px;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+.bienestar-boton {
+    display: inline-block;
+    background: #C6FF20;
+    color: #171BB5;
+    text-decoration: none;
+    padding: 15px 23px;
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.bienestar-portada-imagen img {
+    width: 100%;
+    height: 390px;
+    object-fit: cover;
+    display: block;
+}
+
+.bienestar-intro {
+    padding: 85px 15%;
+    text-align: center;
+}
+
+.bienestar-intro > span,
+.bienestar-titulo > span {
+    color: #171BB5;
+}
+
+.bienestar-intro h2 {
+    font-size: clamp(32px, 5vw, 55px);
+    margin: 18px 0;
+}
+
+.bienestar-intro p {
+    max-width: 760px;
+    margin: auto;
+    line-height: 1.8;
+    color: #555;
+}
+
+.bienestar-contenido {
+    background: #F3F3F3;
+    padding: 75px 7%;
+}
+
+.bienestar-titulo {
+    margin-bottom: 40px;
+}
+
+.bienestar-titulo h2,
+.bienestar-ciclo h2,
+.bienestar-equilibrio h2,
+.bienestar-consejos h2 {
+    font-size: clamp(34px, 5vw, 55px);
+    margin: 15px 0;
+}
+
+.bienestar-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.bienestar-card {
+    background: white;
+}
+
+.bienestar-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+}
+
+.bienestar-card > div {
+    padding: 25px;
+}
+
+.bienestar-card > div > span {
+    color: #171BB5;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.bienestar-card h3 {
+    font-size: 27px;
+    margin: 12px 0;
+}
+
+.bienestar-card p {
+    color: #555;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.bienestar-ciclo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 55px;
+    padding: 85px 7%;
+}
+
+.bienestar-ciclo-imagen img {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    display: block;
+}
+
+.bienestar-ciclo-texto > span,
+.bienestar-equilibrio-texto > span {
+    color: #171BB5;
+}
+
+.bienestar-ciclo-texto h2,
+.bienestar-equilibrio-texto h2 {
+    line-height: 1;
+}
+
+.bienestar-ciclo-texto p,
+.bienestar-equilibrio-texto p {
+    color: #555;
+    line-height: 1.8;
+}
+
+.bienestar-equilibrio {
+    background: #F3F3F3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 55px;
+    padding: 85px 7%;
+}
+
+.bienestar-equilibrio-imagen img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    display: block;
+}
+
+.bienestar-consejos {
+    background: #171BB5;
+    color: white;
+    padding: 80px 7%;
+}
+
+.bienestar-consejos-titulo {
+    max-width: 750px;
+    margin-bottom: 40px;
+}
+
+.bienestar-consejos-titulo h2 {
+    line-height: 1;
+}
+
+.bienestar-consejos-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.bienestar-consejo {
+    border-top: 3px solid #C6FF20;
+    padding: 22px 5px;
+}
+
+.bienestar-consejo > span {
+    color: #C6FF20;
+    font-weight: 800;
+    font-size: 13px;
+}
+
+.bienestar-consejo h3 {
+    font-size: 23px;
+    margin: 15px 0 10px;
+}
+
+.bienestar-consejo p {
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.bienestar-final {
+    background: #C6FF20;
+    color: #171BB5;
+    text-align: center;
+    padding: 65px 10%;
+}
+
+.bienestar-final h2 {
+    font-size: clamp(35px, 5vw, 58px);
+    margin: 0 auto 15px;
+    max-width: 950px;
+}
+
+.bienestar-final p {
+    font-weight: 600;
+}
+
+.bienestar-footer {
+    background: #171BB5;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+    .bienestar-portada,
+    .bienestar-ciclo,
+    .bienestar-equilibrio {
+        grid-template-columns: 1fr;
+    }
+
+    .bienestar-portada-imagen img {
+        height: 320px;
+    }
+
+    .bienestar-consejos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* CELULAR */
+@media (max-width: 600px) {
+    .bienestar-header {
+        padding: 20px 5%;
+    }
+
+    .bienestar-header nav {
+        gap: 14px;
+    }
+
+    .bienestar-portada,
+    .bienestar-contenido,
+    .bienestar-consejos {
+        padding: 50px 6%;
+    }
+
+    .bienestar-grid,
+    .bienestar-consejos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .bienestar-intro,
+    .bienestar-ciclo,
+    .bienestar-equilibrio {
+        padding: 55px 7%;
+    }
+
+    .bienestar-portada-imagen img {
+        height: 250px;
+    }
+
+    .bienestar-ciclo-imagen img,
+    .bienestar-equilibrio-imagen img {
+        height: 280px;
+    }
+}
+
+/* ========================================
+   HOCKEY LAB
+   EQUIPAMIENTO
+======================================== */
+
+.equipamiento-page {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    color: #171BB5;
+    background: #FFFFFF;
+}
+
+.equipamiento-page h1,
+.equipamiento-page h2,
+.equipamiento-page h3,
+.equipamiento-page h4,
+.equipamiento-logo {
+    font-family: 'League Spartan', sans-serif;
+}
+
+/* ========================================
+   HEADER
+======================================== */
+
+.equipamiento-header {
+    background: #171BB5;
+    color: white;
+    padding: 22px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.equipamiento-logo {
+    color: #C6FF20;
+    font-size: 27px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.equipamiento-header nav {
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+
+.equipamiento-header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    transition: 0.2s;
+}
+
+.equipamiento-header nav a:hover {
+    color: #C6FF20;
+}
+
+/* ========================================
+   PORTADA
+======================================== */
+
+.equipamiento-portada {
+    background: #171BB5;
+    color: white;
+    padding: 65px 7% 85px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 45px;
+}
+
+.equipamiento-portada-texto > span {
+    color: #C6FF20;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.equipamiento-portada-texto h1 {
+    font-size: clamp(55px, 8vw, 100px);
+    line-height: 0.9;
+    margin: 20px 0;
+}
+
+.equipamiento-portada-texto p {
+    max-width: 480px;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+.equipamiento-boton {
+    display: inline-block;
+    background: #C6FF20;
+    color: #171BB5;
+    text-decoration: none;
+    padding: 15px 23px;
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 800;
+    transition: 0.2s;
+}
+
+.equipamiento-boton:hover {
+    background: white;
+}
+
+.equipamiento-portada-imagen img {
+    width: 100%;
+    height: 390px;
+    object-fit: cover;
+    display: block;
+}
+
+/* ========================================
+   INTRODUCCIÓN
+======================================== */
+
+.equipamiento-intro {
+    padding: 85px 15%;
+    text-align: center;
+}
+
+.equipamiento-intro > span {
+    color: #171BB5;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.equipamiento-intro h2 {
+    font-size: clamp(32px, 5vw, 55px);
+    margin: 18px 0;
+}
+
+.equipamiento-intro p {
+    max-width: 760px;
+    margin: auto;
+    line-height: 1.8;
+    color: #555555;
+}
+
+/* ========================================
+   ELEMENTOS PRINCIPALES
+======================================== */
+
+.equipamiento-elementos {
+    background: #F3F3F3;
+    padding: 75px 7%;
+}
+
+.equipamiento-titulo {
+    margin-bottom: 40px;
+}
+
+.equipamiento-titulo > span {
+    color: #171BB5;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.equipamiento-titulo h2 {
+    font-size: clamp(34px, 5vw, 55px);
+    margin: 15px 0;
+}
+
+.equipamiento-titulo p {
+    color: #555555;
+    line-height: 1.7;
+}
+
+.equipamiento-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.equipamiento-card {
+    background: white;
+    overflow: hidden;
+}
+
+.equipamiento-card img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s;
+}
+
+.equipamiento-card:hover img {
+    transform: scale(1.03);
+}
+
+.equipamiento-card-texto {
+    padding: 25px;
+}
+
+.equipamiento-card-texto > span {
+    color: #171BB5;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.equipamiento-card h3 {
+    font-size: 30px;
+    margin: 12px 0;
+}
+
+.equipamiento-card h4 {
+    font-size: 17px;
+    margin: 22px 0 8px;
+}
+
+.equipamiento-card p {
+    color: #555555;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* ========================================
+   SELECTOR SEGÚN POSICIÓN
+======================================== */
+
+.equipamiento-posiciones {
+    background: white;
+    padding: 85px 7%;
+}
+
+.equipamiento-posiciones-titulo {
+    max-width: 760px;
+    margin-bottom: 40px;
+}
+
+.equipamiento-posiciones-titulo > span {
+    color: #171BB5;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.equipamiento-posiciones-titulo h2 {
+    font-size: clamp(36px, 5vw, 58px);
+    margin: 15px 0;
+}
+
+.equipamiento-posiciones-titulo p {
+    color: #555555;
+    line-height: 1.7;
+}
+
+/* Selector */
+
+.equipamiento-selector {
+    background: #171BB5;
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+}
+
+.equipamiento-selector label {
+    color: #C6FF20;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.equipamiento-selector select {
+    width: 100%;
+    max-width: 500px;
+    padding: 17px;
+
+    border: none;
+    border-radius: 0;
+    outline: none;
+
+    background: white;
+    color: #171BB5;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.equipamiento-selector button {
+    background: #C6FF20;
+    color: #171BB5;
+
+    border: none;
+    padding: 17px 25px;
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.equipamiento-selector button:hover {
+    background: white;
+}
+
+/* Resultado */
+
+.equipamiento-resultado {
+    margin-top: 35px;
+    border: 2px solid #171BB5;
+    padding: 35px;
+}
+
+.equipamiento-resultado[hidden] {
+    display: none;
+}
+
+.equipamiento-resultado-encabezado > span {
+    color: #171BB5;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.equipamiento-resultado-encabezado h3 {
+    font-size: 42px;
+    margin: 12px 0;
+}
+
+.equipamiento-resultado-encabezado p {
+    color: #555555;
+    line-height: 1.7;
+}
+
+/* Tarjetas de recomendaciones */
+
+.equipamiento-recomendaciones {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.equipamiento-recomendacion {
+    background: #F3F3F3;
+    padding: 25px;
+    border-top: 4px solid #C6FF20;
+}
+
+.equipamiento-recomendacion > span {
+    color: #171BB5;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.equipamiento-recomendacion h4 {
+    font-size: 25px;
+    margin: 15px 0;
+}
+
+.equipamiento-recomendacion p {
+    color: #555555;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+/* Consejo personalizado */
+
+.equipamiento-consejo {
+    background: #C6FF20;
+    color: #171BB5;
+    padding: 25px;
+    margin-top: 25px;
+}
+
+.equipamiento-consejo > span {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.equipamiento-consejo p {
+    line-height: 1.7;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.equipamiento-selector-aclaracion {
+    color: #777777;
+    font-size: 12px;
+    line-height: 1.7;
+    margin-top: 20px;
+}
+
+/* ========================================
+   EQUIPAMIENTO DE ARQUERAS
+======================================== */
+
+.equipamiento-arqueras {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 55px;
+    padding: 85px 7%;
+}
+
+.equipamiento-arqueras-imagen img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    display: block;
+}
+
+.equipamiento-arqueras-texto > span {
+    color: #171BB5;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.equipamiento-arqueras-texto h2 {
+    font-size: clamp(34px, 5vw, 55px);
+    line-height: 1;
+}
+
+.equipamiento-arqueras-texto p {
+    color: #555555;
+    line-height: 1.8;
+}
+
+.equipamiento-arqueras-texto ul {
+    padding-left: 20px;
+    line-height: 2;
+    font-weight: 600;
+}
+
+/* ========================================
+   CÓMO ELEGIR
+======================================== */
+
+.equipamiento-eleccion {
+    background: #171BB5;
+    color: white;
+    padding: 80px 7%;
+}
+
+.equipamiento-eleccion-titulo {
+    max-width: 750px;
+    margin-bottom: 40px;
+}
+
+.equipamiento-eleccion-titulo > span {
+    color: #C6FF20;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.equipamiento-eleccion-titulo h2 {
+    font-size: clamp(34px, 5vw, 55px);
+    line-height: 1;
+}
+
+.equipamiento-eleccion-titulo p {
+    line-height: 1.7;
+}
+
+.equipamiento-eleccion-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.equipamiento-eleccion-item {
+    border-top: 3px solid #C6FF20;
+    padding: 22px 5px;
+}
+
+.equipamiento-eleccion-item > span {
+    color: #C6FF20;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.equipamiento-eleccion-item h3 {
+    font-size: 24px;
+    margin: 15px 0 10px;
+}
+
+.equipamiento-eleccion-item p {
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* ========================================
+   CHECKLIST
+======================================== */
+
+.equipamiento-checklist {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 65px;
+    padding: 85px 10%;
+    align-items: start;
+}
+
+.equipamiento-checklist-texto > span {
+    color: #171BB5;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.equipamiento-checklist-texto h2 {
+    font-size: clamp(34px, 5vw, 55px);
+    line-height: 1;
+}
+
+.equipamiento-checklist-texto p {
+    color: #555555;
+    line-height: 1.7;
+}
+
+.equipamiento-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.equipamiento-lista > div {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 12px 0;
+    border-bottom: 1px solid #D9D9D9;
+    font-weight: 600;
+}
+
+.equipamiento-lista span {
+    background: #C6FF20;
+    color: #171BB5;
+
+    width: 35px;
+    height: 35px;
+    min-width: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 800;
+}
+
+/* ========================================
+   CIERRE
+======================================== */
+
+.equipamiento-final {
+    background: #C6FF20;
+    color: #171BB5;
+    text-align: center;
+    padding: 65px 10%;
+}
+
+.equipamiento-final h2 {
+    font-size: clamp(35px, 5vw, 58px);
+    margin: 0 auto 15px;
+    max-width: 900px;
+}
+
+.equipamiento-final p {
+    font-weight: 600;
+}
+
+/* ========================================
+   FOOTER
+======================================== */
+
+.equipamiento-footer {
+    background: #171BB5;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+/* ========================================
+   RESPONSIVE - TABLET
+======================================== */
+
+@media (max-width: 900px) {
+
+    .equipamiento-portada,
+    .equipamiento-arqueras,
+    .equipamiento-checklist {
+        grid-template-columns: 1fr;
+    }
+
+    .equipamiento-eleccion-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .equipamiento-portada-imagen img {
+        height: 320px;
+    }
+
+    .equipamiento-recomendaciones {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ========================================
+   RESPONSIVE - CELULAR
+======================================== */
+
+@media (max-width: 600px) {
+
+    .equipamiento-header {
+        padding: 20px 5%;
+    }
+
+    .equipamiento-header nav {
+        gap: 14px;
+    }
+
+    .equipamiento-portada,
+    .equipamiento-elementos,
+    .equipamiento-eleccion {
+        padding: 50px 6%;
+    }
+
+    .equipamiento-grid,
+    .equipamiento-eleccion-grid,
+    .equipamiento-recomendaciones {
+        grid-template-columns: 1fr;
+    }
+
+    .equipamiento-intro,
+    .equipamiento-posiciones,
+    .equipamiento-arqueras,
+    .equipamiento-checklist {
+        padding: 55px 7%;
+    }
+
+    .equipamiento-portada-imagen img {
+        height: 250px;
+    }
+
+    .equipamiento-arqueras-imagen img {
+        height: 300px;
+    }
+
+    .equipamiento-selector {
+        padding: 25px;
+    }
+
+    .equipamiento-selector select {
+        max-width: 100%;
+    }
+
+    .equipamiento-selector button {
+        width: 100%;
+    }
+
+    .equipamiento-resultado {
+        padding: 22px;
+    }
+
+    .equipamiento-resultado-encabezado h3 {
+        font-size: 35px;
+    }
 }

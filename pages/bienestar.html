@@ -1,46 +1,256 @@
+
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/stylesheet2.css">
-        
-<!-- TIPOGRAFIA TEXTO -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
-    
-<title>HockeyZone</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienestar | Hockey Lab</title>
+
+    <link rel="stylesheet" href="../css/stylesheet2.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=League+Spartan:wght@500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="bienestar-page">
 
-    <header>
-        
-        <div>
-            LOGO
-        </div>
+    <header class="bienestar-header">
+        <a href="../index.html" class="bienestar-logo">HOCKEY LAB</a>
 
         <nav>
-           <a href="../index.html">INICIO</a>
-           <a href="secciones.html">SECCIONES</a>
-           <a href="sobrenosotros.html">SOBRE NOSOTROS</a>
-           <a href="contacto.html">CONTACTO</a>
+            <a href="../index.html">INICIO</a>
+            <a href="secciones.html">SECCIONES</a>
+            <a href="sobrenosotros.html">SOBRE NOSOTROS</a>
+            <a href="contacto.html">CONTACTO</a>
         </nav>
+    </header>
 
-        <main>
-    
-        <section>
+    <main>
 
-            <div>
-                <h1>titulo principal</h1>
-                <p>texto descriptivo</p>
-                <button>boton</button>
+        <!-- PORTADA -->
+        <section class="bienestar-portada">
+            <div class="bienestar-portada-texto">
+                <span>CUERPO · MENTE · DEPORTE</span>
+                <h1>BIENESTAR</h1>
+                <p>
+                    Ser deportista es mucho más que entrenar.
+                    Sentirte bien, disfrutar del equipo y encontrar
+                    tu propio equilibrio también forman parte del juego.
+                </p>
+                <a href="#bienestar-contenido" class="bienestar-boton">
+                    EXPLORÁ EL BIENESTAR
+                </a>
             </div>
 
-            <div>
-                IMAGEN
+            <div class="bienestar-portada-imagen">
+                <img src="../img/bienestar-portada.jpg" alt="Jugadoras de hockey compartiendo un momento">
             </div>
-
         </section>
+
+        <!-- INTRODUCCIÓN -->
+        <section class="bienestar-intro">
+            <span>01 / MUCHO MÁS QUE HOCKEY</span>
+            <h2>UNA DEPORTISTA. MUCHAS DIMENSIONES.</h2>
+            <p>
+                El bienestar no se mide solamente por el rendimiento
+                dentro de la cancha. También tiene que ver con cómo
+                te alimentás, cómo te relacionás con los demás,
+                cómo atravesás los desafíos y cómo disfrutás de tu vida.
+                Cuidar estos aspectos te permite vivir el deporte
+                de una manera más saludable y consciente.
+            </p>
+        </section>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <section class="bienestar-contenido" id="bienestar-contenido">
+
+            <div class="bienestar-titulo">
+                <span>02 / CONOCERTE Y CUIDARTE</span>
+                <h2>ASPECTOS QUE TAMBIÉN IMPORTAN.</h2>
+            </div>
+
+            <div class="bienestar-grid">
+
+                <article class="bienestar-card">
+                    <img src="../img/bienestar-alimentacion.jpg" alt="Comida variada y nutritiva">
+                    <div>
+                        <span>01 / NUTRICIÓN</span>
+                        <h3>ALIMENTARTE PARA DISFRUTAR Y RENDIR</h3>
+                        <p>
+                            La alimentación aporta la energía y los nutrientes
+                            que necesitás para tu actividad deportiva.
+                            Una dieta variada, suficiente y adaptada a tus
+                            necesidades acompaña tanto el entrenamiento
+                            como tu vida cotidiana.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="bienestar-card">
+                    <img src="../img/bienestar-mental.jpg" alt="Deportista concentrada">
+                    <div>
+                        <span>02 / SALUD MENTAL</span>
+                        <h3>LA CABEZA TAMBIÉN JUEGA</h3>
+                        <p>
+                            La presión por los resultados, los errores
+                            y las expectativas pueden influir en cómo
+                            vivís el deporte. Reconocer tus emociones
+                            y aprender a expresarlas también es parte
+                            de ser deportista.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="bienestar-card">
+                    <img src="../img/bienestar-confianza.jpg" alt="Jugadora de hockey entrenando">
+                    <div>
+                        <span>03 / CONFIANZA</span>
+                        <h3>CREER EN TU PROPIO PROCESO</h3>
+                        <p>
+                            No todos los días se juega igual ni todos
+                            los objetivos se alcanzan de inmediato.
+                            Reconocer tus avances, aceptar los errores
+                            y valorar el aprendizaje ayuda a construir
+                            confianza dentro y fuera de la cancha.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="bienestar-card">
+                    <img src="../img/bienestar-equipo.jpg" alt="Equipo de hockey unido">
+                    <div>
+                        <span>04 / VÍNCULOS</span>
+                        <h3>EL EQUIPO TAMBIÉN TE CUIDA</h3>
+                        <p>
+                            El compañerismo, la comunicación y el apoyo
+                            mutuo hacen que el deporte sea una experiencia
+                            compartida. Sentirse parte de un equipo también
+                            contribuye al bienestar.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- CICLO MENSTRUAL -->
+        <section class="bienestar-ciclo">
+            <div class="bienestar-ciclo-imagen">
+                <img src="../img/bienestar-ciclo.jpg" alt="Deportista realizando actividad física">
+            </div>
+
+            <div class="bienestar-ciclo-texto">
+                <span>03 / CONOCER TU CUERPO</span>
+                <h2>CICLO MENSTRUAL Y DEPORTE.</h2>
+                <p>
+                    El ciclo menstrual es un aspecto de la salud
+                    que también puede formar parte de la experiencia
+                    deportiva. Algunas jugadoras notan cambios en
+                    su energía, estado de ánimo o sensaciones físicas
+                    a lo largo del ciclo.
+                </p>
+                <p>
+                    Cada cuerpo es diferente. Registrar cómo te sentís
+                    puede ayudarte a reconocer patrones y conocer mejor
+                    tus propias necesidades, sin exigirte rendir igual
+                    todos los días.
+                </p>
+                <p>
+                    Si experimentás dolor intenso, sangrado abundante
+                    o cambios que afectan tu vida cotidiana, consultá
+                    con un profesional de salud.
+                </p>
+            </div>
+        </section>
+
+        <!-- EQUILIBRIO -->
+        <section class="bienestar-equilibrio">
+            <div class="bienestar-equilibrio-texto">
+                <span>04 / VIDA DENTRO Y FUERA DE LA CANCHA</span>
+                <h2>NO TODO PASA POR EL HOCKEY.</h2>
+                <p>
+                    Entre entrenamientos, partidos y compromisos,
+                    es importante encontrar un equilibrio con el
+                    estudio, el trabajo, la familia y la vida social.
+                </p>
+                <p>
+                    Tener otros intereses, compartir tiempo con amigos
+                    y disfrutar de actividades diferentes también
+                    forma parte de una vida saludable.
+                </p>
+                <p>
+                    Ser deportista no significa que el hockey tenga
+                    que ocupar todos tus espacios. También necesitás
+                    momentos para vos.
+                </p>
+            </div>
+
+            <div class="bienestar-equilibrio-imagen">
+                <img src="../img/bienestar-equilibrio.jpg" alt="Amigas compartiendo fuera de la cancha">
+            </div>
+        </section>
+
+        <!-- CONSEJOS -->
+        <section class="bienestar-consejos">
+            <div class="bienestar-consejos-titulo">
+                <span>05 / PARA LLEVARTE A LA CANCHA</span>
+                <h2>NO TE OLVIDES DE ESTO.</h2>
+            </div>
+
+            <div class="bienestar-consejos-grid">
+
+                <div class="bienestar-consejo">
+                    <span>01</span>
+                    <h3>NO TE COMPARES</h3>
+                    <p>
+                        Cada jugadora tiene sus tiempos, objetivos
+                        y formas de progresar.
+                    </p>
+                </div>
+
+                <div class="bienestar-consejo">
+                    <span>02</span>
+                    <h3>APRENDÉ DE LOS ERRORES</h3>
+                    <p>
+                        Equivocarte es parte del aprendizaje.
+                        No dejes que un mal partido defina tu proceso.
+                    </p>
+                </div>
+
+                <div class="bienestar-consejo">
+                    <span>03</span>
+                    <h3>EXPRESÁ LO QUE SENTÍS</h3>
+                    <p>
+                        Hablar con tus compañeras, entrenadores
+                        o personas de confianza puede ayudarte.
+                    </p>
+                </div>
+
+                <div class="bienestar-consejo">
+                    <span>04</span>
+                    <h3>DISFRUTÁ EL CAMINO</h3>
+                    <p>
+                        Recordá por qué empezaste a jugar
+                        y qué es lo que te hace disfrutar del hockey.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CIERRE -->
+        <section class="bienestar-final">
+            <h2>NO SOS SOLAMENTE UNA JUGADORA. SOS MUCHO MÁS QUE LO QUE PASA EN LA CANCHA.</h2>
+            <p>Disfrutá el deporte. Cuidá de vos.</p>
+        </section>
+
+    </main>
+
+    <footer class="bienestar-footer">
+        HOCKEY LAB · CUIDADO · MOVIMIENTO
+    </footer>
+
+</body>
+</html>
+

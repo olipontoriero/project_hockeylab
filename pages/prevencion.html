@@ -1,46 +1,279 @@
+
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/stylesheet2.css">
-        
-<!-- TIPOGRAFIA TEXTO -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
-   
-<title>HockeyZone</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prevención | Hockey Lab</title>
+
+    <link rel="stylesheet" href="../css/stylesheet2.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=League+Spartan:wght@500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="prevencion-page">
 
-    <header>
-        
-        <div>
-            LOGO
-        </div>
+    <header class="prevencion-header">
+        <a href="../index.html" class="prevencion-logo">HOCKEY LAB</a>
 
         <nav>
-           <a href="../index.html">INICIO</a>
-           <a href="secciones.html">SECCIONES</a>
-           <a href="sobrenosotros.html">SOBRE NOSOTROS</a>
-           <a href="contacto.html">CONTACTO</a>
+            <a href="../index.html">INICIO</a>
+            <a href="secciones.html">SECCIONES</a>
+            <a href="sobrenosotros.html">SOBRE NOSOTROS</a>
+            <a href="contacto.html">CONTACTO</a>
         </nav>
+    </header>
 
-        <main>
-    
-        <section>
+    <main>
 
-            <div>
-                <h1>titulo principal</h1>
-                <p>texto descriptivo</p>
-                
+        <!-- PORTADA -->
+        <section class="prevencion-portada">
+            <div class="prevencion-portada-texto">
+                <span class="prevencion-etiqueta">CUIDADO Y PREVENCIÓN</span>
+                <h1>PREVENCIÓN</h1>
+                <p>
+                    Conocer tu cuerpo, reconocer sus límites y adoptar buenos
+                    hábitos también forma parte del entrenamiento.
+                </p>
+                <a href="#lesiones" class="prevencion-boton">EMPEZÁ A CUIDARTE</a>
             </div>
 
-            <div>
-                IMAGEN
+            <div class="prevencion-portada-imagen">
+                <img src="../img/prevencion-portada.jpg" alt="Jugadora de hockey entrenando">
             </div>
-
         </section>
+
+        <!-- INTRODUCCIÓN -->
+        <section class="prevencion-intro">
+            <span>01 / CONOCER PARA CUIDAR</span>
+            <h2>JUGAR MEJOR TAMBIÉN ES CUIDARSE.</h2>
+            <p>
+                El hockey exige velocidad, fuerza, coordinación y cambios
+                constantes de dirección. Por eso, el cuerpo está expuesto a
+                diferentes esfuerzos durante los entrenamientos y partidos.
+                Incorporar hábitos de prevención ayuda a cuidar las
+                articulaciones y los músculos, y a entrenar de manera más
+                consciente.
+            </p>
+        </section>
+
+        <!-- LESIONES FRECUENTES -->
+        <section class="prevencion-lesiones" id="lesiones">
+            <div class="prevencion-titulo">
+                <span>02 / CONOCÉ TU CUERPO</span>
+                <h2>LESIONES FRECUENTES EN HOCKEY</h2>
+                <p>
+                    Algunas zonas del cuerpo reciben una exigencia especial
+                    durante la práctica de este deporte.
+                </p>
+            </div>
+
+            <div class="prevencion-grid">
+
+                <article class="prevencion-card">
+                    <img src="../img/prevencion-rodilla.jpg" alt="Rodilla">
+                    <div class="prevencion-card-texto">
+                        <span>01</span>
+                        <h3>RODILLAS</h3>
+                        <p>
+                            Los giros, frenadas y cambios bruscos de dirección
+                            pueden generar una gran exigencia sobre la
+                            articulación.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="prevencion-card">
+                    <img src="../img/prevencion-tobillo.jpg" alt="Tobillo">
+                    <div class="prevencion-card-texto">
+                        <span>02</span>
+                        <h3>TOBILLOS</h3>
+                        <p>
+                            Los apoyos, desplazamientos y movimientos rápidos
+                            pueden provocar torceduras y esguinces.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="prevencion-card">
+                    <img src="../img/prevencion-musculos.jpg" alt="Músculos de las piernas">
+                    <div class="prevencion-card-texto">
+                        <span>03</span>
+                        <h3>MÚSCULOS</h3>
+                        <p>
+                            Los esfuerzos intensos y la fatiga pueden favorecer
+                            sobrecargas y distensiones musculares.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="prevencion-card">
+                    <img src="../img/prevencion-espalda.jpg" alt="Espalda">
+                    <div class="prevencion-card-texto">
+                        <span>04</span>
+                        <h3>ESPALDA</h3>
+                        <p>
+                            La postura inclinada característica del hockey
+                            puede generar tensión en la zona lumbar.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- CÓMO PREVENIR -->
+        <section class="prevencion-habitos">
+            <div class="prevencion-habitos-texto">
+                <span>03 / HÁBITOS QUE SUMAN</span>
+                <h2>LA PREVENCIÓN EMPIEZA ANTES DE ENTRAR A LA CANCHA.</h2>
+                <p>
+                    Cuidar el cuerpo no depende de una sola acción. Es la
+                    combinación de pequeños hábitos que se incorporan
+                    diariamente.
+                </p>
+            </div>
+
+            <div class="prevencion-habitos-lista">
+
+                <div class="prevencion-habito">
+                    <span>01</span>
+                    <div>
+                        <h3>CALENTAR ANTES DE JUGAR</h3>
+                        <p>
+                            Prepará progresivamente los músculos y las
+                            articulaciones antes de comenzar la actividad.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="prevencion-habito">
+                    <span>02</span>
+                    <div>
+                        <h3>FORTALECER EL CUERPO</h3>
+                        <p>
+                            Trabajá la fuerza de piernas, zona media y tren
+                            superior para acompañar las exigencias del deporte.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="prevencion-habito">
+                    <span>03</span>
+                    <div>
+                        <h3>RESPETAR EL DESCANSO</h3>
+                        <p>
+                            La recuperación es parte del entrenamiento.
+                            Dormir bien y evitar la sobrecarga también es
+                            importante.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="prevencion-habito">
+                    <span>04</span>
+                    <div>
+                        <h3>MANTENERSE HIDRATADO</h3>
+                        <p>
+                            Tomá agua antes, durante y después de la actividad,
+                            especialmente en jornadas de mucho calor.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="prevencion-habito">
+                    <span>05</span>
+                    <div>
+                        <h3>USAR EL EQUIPAMIENTO ADECUADO</h3>
+                        <p>
+                            Elegí calzado y protecciones apropiadas para la
+                            superficie y las necesidades del juego.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SEÑALES DE ALERTA -->
+        <section class="prevencion-alerta">
+            <div class="prevencion-alerta-texto">
+                <span>04 / ESCUCHÁ TU CUERPO</span>
+                <h2>NO TODO DOLOR ES PARTE DEL ENTRENAMIENTO.</h2>
+                <p>
+                    Aprender a reconocer las señales del cuerpo es fundamental.
+                    Ignorar una molestia puede empeorar una lesión.
+                </p>
+            </div>
+
+            <div class="prevencion-alerta-grid">
+                <div class="prevencion-alerta-item">
+                    <h3>DOLOR INTENSO</h3>
+                    <p>Si aparece un dolor fuerte o repentino, frená la actividad.</p>
+                </div>
+
+                <div class="prevencion-alerta-item">
+                    <h3>INFLAMACIÓN</h3>
+                    <p>La hinchazón después de un golpe o una torcedura necesita atención.</p>
+                </div>
+
+                <div class="prevencion-alerta-item">
+                    <h3>LIMITACIÓN DEL MOVIMIENTO</h3>
+                    <p>Si no podés mover o apoyar una parte del cuerpo con normalidad, no fuerces.</p>
+                </div>
+
+                <div class="prevencion-alerta-item">
+                    <h3>MOLESTIAS PERSISTENTES</h3>
+                    <p>Si el dolor continúa o vuelve a aparecer, consultá con un profesional.</p>
+                </div>
+            </div>
+
+            <p class="prevencion-aclaracion">
+                Ante una lesión o dolor persistente, suspendé la actividad y
+                buscá una evaluación profesional. No intentes jugar por encima
+                del dolor.
+            </p>
+        </section>
+
+        <!-- RUTINA DE CUIDADO -->
+        <section class="prevencion-rutina">
+            <span>05 / TU RUTINA DE CUIDADO</span>
+            <h2>PEQUEÑAS ACCIONES, GRANDES DIFERENCIAS.</h2>
+
+            <div class="prevencion-rutina-grid">
+                <div>
+                    <span>ANTES</span>
+                    <h3>PREPARÁ</h3>
+                    <p>Calentá, movilizá las articulaciones y prepará tu cuerpo para el esfuerzo.</p>
+                </div>
+
+                <div>
+                    <span>DURANTE</span>
+                    <h3>REGULÁ</h3>
+                    <p>Hidratate, prestá atención a las sensaciones y respetá tus límites.</p>
+                </div>
+
+                <div>
+                    <span>DESPUÉS</span>
+                    <h3>RECUPERÁ</h3>
+                    <p>Hidratate, descansá y dale a tu cuerpo el tiempo que necesita.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CIERRE -->
+        <section class="prevencion-final">
+            <h2>EL MEJOR ENTRENAMIENTO ES EL QUE TE PERMITE SEGUIR JUGANDO.</h2>
+            <p>Cuidá tu cuerpo. Disfrutá el juego.</p>
+        </section>
+
+    </main>
+
+    <footer class="prevencion-footer">
+        HOCKEY LAB · CUIDADO · MOVIMIENTO
+    </footer>
+
+</body>
+</html>

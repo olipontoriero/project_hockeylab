@@ -1,46 +1,454 @@
+
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/stylesheet2.css">
-        
-<!-- TIPOGRAFIA TEXTO -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
-    
-<title>HockeyZone</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipamiento | Hockey Lab</title>
+
+    <link rel="stylesheet" href="../css/stylesheet2.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=League+Spartan:wght@500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="equipamiento-page">
 
-    <header>
-        
-        <div>
-            LOGO
-        </div>
+    <header class="equipamiento-header">
+        <a href="../index.html" class="equipamiento-logo">HOCKEY LAB</a>
 
         <nav>
-           <a href="../index.html">INICIO</a>
-           <a href="secciones.html">SECCIONES</a>
-           <a href="sobrenosotros.html">SOBRE NOSOTROS</a>
-           <a href="contacto.html">CONTACTO</a>
+            <a href="../index.html">INICIO</a>
+            <a href="secciones.html">SECCIONES</a>
+            <a href="sobrenosotros.html">SOBRE NOSOTROS</a>
+            <a href="contacto.html">CONTACTO</a>
         </nav>
+    </header>
 
-        <main>
-    
-        <section>
+    <main>
 
-            <div>
-                <h1>titulo principal</h1>
-                <p>texto descriptivo</p>
-                
+        <!-- PORTADA -->
+        <section class="equipamiento-portada">
+            <div class="equipamiento-portada-texto">
+                <span>ELEMENTOS PARA JUGAR</span>
+                <h1>EQUIPAMIENTO</h1>
+                <p>
+                    Cada elemento cumple una función dentro de la cancha.
+                    Conocé qué necesitás, para qué sirve y cómo elegir
+                    el equipamiento adecuado para jugar al hockey.
+                </p>
+                <a href="#elementos" class="equipamiento-boton">
+                    CONOCÉ LOS ELEMENTOS
+                </a>
             </div>
 
-            <div>
-                IMAGEN
+            <div class="equipamiento-portada-imagen">
+                <img src="../img/equipamiento-portada.jpg" alt="Elementos de hockey sobre césped">
             </div>
+        </section>
+
+        <!-- INTRODUCCIÓN -->
+        <section class="equipamiento-intro">
+            <span>01 / PREPARATE PARA JUGAR</span>
+            <h2>EL EQUIPAMIENTO TAMBIÉN ES PARTE DEL JUEGO.</h2>
+            <p>
+                Elegir los elementos adecuados permite jugar con mayor
+                comodidad y contar con la protección necesaria durante
+                la actividad. Cada jugadora tiene necesidades diferentes
+                según su posición, nivel y características físicas.
+            </p>
+        </section>
+
+        <!-- ELEMENTOS PRINCIPALES -->
+        <section class="equipamiento-elementos" id="elementos">
+
+            <div class="equipamiento-titulo">
+                <span>02 / ELEMENTOS PRINCIPALES</span>
+                <h2>LO QUE NO PUEDE FALTAR.</h2>
+                <p>
+                    Conocé los elementos fundamentales para entrenar
+                    y competir en hockey sobre césped.
+                </p>
+            </div>
+
+            <div class="equipamiento-grid">
+
+                <article class="equipamiento-card">
+                    <img src="../img/equipamiento-palo.jpg" alt="Palo de hockey">
+                    <div class="equipamiento-card-texto">
+                        <span>01 / ELEMENTO DE JUEGO</span>
+                        <h3>EL PALO</h3>
+                        <p>
+                            Es la herramienta principal para conducir,
+                            pasar y golpear la bocha. Se fabrica con
+                            distintos materiales, formas y composiciones.
+                        </p>
+                        <h4>¿QUÉ TENER EN CUENTA?</h4>
+                        <p>
+                            El largo, el peso, el balance y la composición
+                            deben adaptarse a tu altura, fuerza y estilo
+                            de juego.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="equipamiento-card">
+                    <img src="../img/equipamiento-botines.jpg" alt="Botines de hockey">
+                    <div class="equipamiento-card-texto">
+                        <span>02 / CALZADO</span>
+                        <h3>BOTINES</h3>
+                        <p>
+                            Brindan agarre y estabilidad durante los
+                            desplazamientos, frenadas y cambios de
+                            dirección.
+                        </p>
+                        <h4>¿QUÉ TENER EN CUENTA?</h4>
+                        <p>
+                            Elegí un modelo específico para hockey,
+                            con buena sujeción, comodidad y tapones
+                            adecuados para la superficie de juego.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="equipamiento-card">
+                    <img src="../img/equipamiento-canchilleras.jpg" alt="Canilleras de hockey">
+                    <div class="equipamiento-card-texto">
+                        <span>03 / PROTECCIÓN</span>
+                        <h3>CANILLERAS</h3>
+                        <p>
+                            Protegen la parte frontal de las piernas
+                            frente a impactos de bochas y palos.
+                        </p>
+                        <h4>¿QUÉ TENER EN CUENTA?</h4>
+                        <p>
+                            Deben cubrir correctamente la zona de la
+                            tibia, mantenerse firmes y permitir moverte
+                            con comodidad.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="equipamiento-card">
+                    <img src="../img/equipamiento-protector.jpg" alt="Protector bucal">
+                    <div class="equipamiento-card-texto">
+                        <span>04 / PROTECCIÓN</span>
+                        <h3>PROTECTOR BUCAL</h3>
+                        <p>
+                            Ayuda a proteger los dientes y los tejidos
+                            de la boca frente a golpes e impactos.
+                        </p>
+                        <h4>¿QUÉ TENER EN CUENTA?</h4>
+                        <p>
+                            Debe ajustarse correctamente, mantenerse
+                            en buen estado y permitir respirar y hablar
+                            con comodidad.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="equipamiento-card">
+                    <img src="../img/equipamiento-guantes.jpg" alt="Guante de hockey">
+                    <div class="equipamiento-card-texto">
+                        <span>05 / PROTECCIÓN</span>
+                        <h3>GUANTE</h3>
+                        <p>
+                            Protege especialmente la mano izquierda,
+                            que queda más expuesta durante distintas
+                            acciones del juego.
+                        </p>
+                        <h4>¿QUÉ TENER EN CUENTA?</h4>
+                        <p>
+                            Buscá un buen ajuste, protección adecuada
+                            y libertad suficiente para agarrar el palo.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="equipamiento-card">
+                    <img src="../img/equipamiento-ropa.jpg" alt="Ropa deportiva de hockey">
+                    <div class="equipamiento-card-texto">
+                        <span>06 / INDUMENTARIA</span>
+                        <h3>ROPA DEPORTIVA</h3>
+                        <p>
+                            Permite moverte con libertad y comodidad
+                            durante los entrenamientos y partidos.
+                        </p>
+                        <h4>¿QUÉ TENER EN CUENTA?</h4>
+                        <p>
+                            Elegí prendas transpirables, cómodas
+                            y adecuadas para las condiciones climáticas.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- EQUIPAMIENTO SEGÚN POSICIÓN -->
+        <section class="equipamiento-posiciones" id="mi-equipamiento">
+
+            <div class="equipamiento-posiciones-titulo">
+                <span>03 / ENCONTRÁ TU EQUIPAMIENTO</span>
+                <h2>¿QUÉ POSICIÓN JUGÁS?</h2>
+                <p>
+                    Cada posición tiene exigencias diferentes dentro de la cancha.
+                    Elegí la tuya y descubrí qué elementos pueden acompañar
+                    mejor tu forma de jugar.
+                </p>
+            </div>
+
+            <div class="equipamiento-selector">
+
+                <label for="posicion-jugadora">SELECCIONÁ TU POSICIÓN</label>
+
+                <select id="posicion-jugadora">
+                    <option value="">Elegí tu posición</option>
+                    <option value="arquera">Arquera</option>
+                    <option value="defensora">Defensora</option>
+                    <option value="mediocampista">Mediocampista</option>
+                    <option value="delantera">Delantera</option>
+                </select>
+
+                <button type="button" id="ver-recomendaciones">
+                    VER MIS RECOMENDACIONES
+                </button>
+
+            </div>
+
+            <div class="equipamiento-resultado" id="resultado-equipamiento" aria-live="polite" hidden>
+
+                <div class="equipamiento-resultado-encabezado">
+                    <span>TU GUÍA PERSONALIZADA</span>
+                    <h3 id="titulo-posicion"></h3>
+                    <p id="descripcion-posicion"></p>
+                </div>
+
+                <div class="equipamiento-recomendaciones">
+
+                    <article class="equipamiento-recomendacion">
+                        <span>01 / CALZADO</span>
+                        <h4>BOTINES</h4>
+                        <p id="recomendacion-botines"></p>
+                    </article>
+
+                    <article class="equipamiento-recomendacion">
+                        <span>02 / ELEMENTO DE JUEGO</span>
+                        <h4>PALO</h4>
+                        <p id="recomendacion-palo"></p>
+                    </article>
+
+                    <article class="equipamiento-recomendacion">
+                        <span>03 / PROTECCIÓN</span>
+                        <h4>PROTECCIONES</h4>
+                        <p id="recomendacion-protecciones"></p>
+                    </article>
+
+                </div>
+
+                <div class="equipamiento-consejo">
+                    <span>UN CONSEJO PARA VOS</span>
+                    <p id="consejo-posicion"></p>
+                </div>
+
+            </div>
+
+            <p class="equipamiento-selector-aclaracion">
+                Las recomendaciones son orientativas. La elección final depende
+                de tu comodidad, características físicas, nivel de juego y
+                reglamento de tu competición.
+            </p>
 
         </section>
+
+        <!-- ARQUERAS -->
+        <section class="equipamiento-arqueras">
+            <div class="equipamiento-arqueras-imagen">
+                <img src="../img/equipamiento-arquera.jpg" alt="Arquera de hockey con su equipamiento">
+            </div>
+
+            <div class="equipamiento-arqueras-texto">
+                <span>04 / EQUIPAMIENTO ESPECIAL</span>
+                <h2>EL EQUIPAMIENTO DE LA ARQUERA.</h2>
+                <p>
+                    La arquera necesita un conjunto de protecciones
+                    específicas para cubrir su cuerpo frente a los
+                    impactos de la bocha durante el juego.
+                </p>
+
+                <ul>
+                    <li>Casco con protección facial.</li>
+                    <li>Pechera y protección corporal.</li>
+                    <li>Guardas para las piernas.</li>
+                    <li>Kickers para los pies.</li>
+                    <li>Guantes específicos de arquera.</li>
+                </ul>
+
+                <p>
+                    Cada elemento debe ajustarse correctamente y estar
+                    en buen estado para cumplir su función protectora.
+                </p>
+            </div>
+        </section>
+
+        <!-- CÓMO ELEGIR -->
+        <section class="equipamiento-eleccion">
+            <div class="equipamiento-eleccion-titulo">
+                <span>05 / ELEGIR CON CRITERIO</span>
+                <h2>NO SE TRATA SOLO DE ELEGIR EL MÁS LINDO.</h2>
+                <p>
+                    Antes de incorporar un elemento nuevo, tené en cuenta
+                    algunos aspectos importantes.
+                </p>
+            </div>
+
+            <div class="equipamiento-eleccion-grid">
+
+                <div class="equipamiento-eleccion-item">
+                    <span>01</span>
+                    <h3>COMODIDAD</h3>
+                    <p>
+                        El equipamiento debe adaptarse a tu cuerpo
+                        y permitirte moverte sin molestias.
+                    </p>
+                </div>
+
+                <div class="equipamiento-eleccion-item">
+                    <span>02</span>
+                    <h3>AJUSTE</h3>
+                    <p>
+                        Los elementos de protección tienen que
+                        mantenerse en su lugar durante el juego.
+                    </p>
+                </div>
+
+                <div class="equipamiento-eleccion-item">
+                    <span>03</span>
+                    <h3>ESTADO</h3>
+                    <p>
+                        Revisá periódicamente que no haya roturas,
+                        desgaste excesivo o partes dañadas.
+                    </p>
+                </div>
+
+                <div class="equipamiento-eleccion-item">
+                    <span>04</span>
+                    <h3>NECESIDAD</h3>
+                    <p>
+                        Considerá tu posición, nivel de juego
+                        y las características de la cancha.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CHECKLIST -->
+        <section class="equipamiento-checklist">
+            <div class="equipamiento-checklist-texto">
+                <span>06 / ANTES DE SALIR A LA CANCHA</span>
+                <h2>¿TENÉS TODO LISTO?</h2>
+                <p>
+                    Una revisión rápida antes de cada entrenamiento
+                    o partido te ayuda a evitar olvidos y detectar
+                    elementos que necesiten reemplazo.
+                </p>
+            </div>
+
+            <div class="equipamiento-lista">
+                <div><span>01</span> Palo en buen estado</div>
+                <div><span>02</span> Botines adecuados</div>
+                <div><span>03</span> Canilleras</div>
+                <div><span>04</span> Protector bucal</div>
+                <div><span>05</span> Guante</div>
+                <div><span>06</span> Indumentaria deportiva</div>
+                <div><span>07</span> Agua para hidratarte</div>
+            </div>
+        </section>
+
+        <!-- CIERRE -->
+        <section class="equipamiento-final">
+            <h2>EL EQUIPAMIENTO ADECUADO TE ACOMPAÑA EN CADA JUGADA.</h2>
+            <p>Elegí bien. Protegete. Disfrutá el hockey.</p>
+        </section>
+
+    </main>
+
+    <footer class="equipamiento-footer">
+        HOCKEY LAB · CUIDADO · MOVIMIENTO
+    </footer>
+
+    <!-- FUNCIONALIDAD DEL SELECTOR -->
+    <script>
+    const recomendaciones = {
+        arquera: {
+            titulo: "ARQUERA",
+            descripcion: "Tu posición requiere protección específica, reflejos y desplazamientos rápidos.",
+            botines: "Buscá botines de hockey con buena estabilidad, agarre y sujeción para realizar desplazamientos laterales y cambios de dirección.",
+            palo: "Elegí un palo específico para arquera, diseñado para las necesidades de esta posición y compatible con el reglamento.",
+            protecciones: "Necesitás casco con protección facial, pechera, protectores de piernas, kickers y guantes específicos de arquera.",
+            consejo: "Revisá que todas tus protecciones estén bien ajustadas y en buen estado antes de cada partido."
+        },
+
+        defensora: {
+            titulo: "DEFENSORA",
+            descripcion: "Tu juego necesita estabilidad, precisión y capacidad para responder ante los ataques rivales.",
+            botines: "Priorizá estabilidad, buen agarre y sujeción para frenar, marcar y cambiar de dirección con seguridad.",
+            palo: "Podés buscar un palo que te resulte cómodo para realizar pases largos, despejes y controles. El peso y la forma deben adaptarse a tu técnica.",
+            protecciones: "Canilleras bien ajustadas, protector bucal y guante de protección para la mano izquierda.",
+            consejo: "Buscá un equipamiento que te permita moverte con seguridad y realizar despejes sin perder comodidad."
+        },
+
+        mediocampista: {
+            titulo: "MEDIOCAMPISTA",
+            descripcion: "Tu posición combina desplazamientos constantes, distribución del juego y participación en ataque y defensa.",
+            botines: "Elegí un calzado cómodo, con buen agarre y estabilidad para recorrer grandes distancias y cambiar de dirección.",
+            palo: "Priorizá un palo equilibrado, que te resulte cómodo para conducir, controlar, pasar y cambiar rápidamente de jugada.",
+            protecciones: "Canilleras, protector bucal y guante izquierdo. Buscá protección sin perder movilidad.",
+            consejo: "Tu posición exige versatilidad: elegí elementos que te permitan adaptarte a distintas situaciones del partido."
+        },
+
+        delantera: {
+            titulo: "DELANTERA",
+            descripcion: "Tu posición requiere velocidad, agilidad y precisión para aprovechar las oportunidades de ataque.",
+            botines: "Buscá botines livianos, con buen agarre y estabilidad para acelerar, frenar y realizar cambios rápidos de dirección.",
+            palo: "Elegí un palo que te permita controlar la bocha con comodidad, conducir con precisión y ejecutar remates. Priorizá el manejo por sobre una elección basada solamente en el peso.",
+            protecciones: "Canilleras, protector bucal y guante izquierdo. Asegurate de que no limiten tus movimientos.",
+            consejo: "La comodidad y el control son fundamentales para poder reaccionar rápido y aprovechar cada oportunidad."
+        }
+    };
+
+    const selector = document.getElementById("posicion-jugadora");
+    const boton = document.getElementById("ver-recomendaciones");
+    const resultado = document.getElementById("resultado-equipamiento");
+
+    boton.addEventListener("click", function () {
+
+        const posicion = selector.value;
+
+        if (!posicion) {
+            alert("Primero seleccioná tu posición.");
+            return;
+        }
+
+        const datos = recomendaciones[posicion];
+
+        document.getElementById("titulo-posicion").textContent = datos.titulo;
+        document.getElementById("descripcion-posicion").textContent = datos.descripcion;
+        document.getElementById("recomendacion-botines").textContent = datos.botines;
+        document.getElementById("recomendacion-palo").textContent = datos.palo;
+        document.getElementById("recomendacion-protecciones").textContent = datos.protecciones;
+        document.getElementById("consejo-posicion").textContent = datos.consejo;
+
+        resultado.hidden = false;
+
+        resultado.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+    });
+    </script>
+
+</body>
+</html>
