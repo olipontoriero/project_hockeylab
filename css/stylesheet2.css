@@ -388,7 +388,7 @@ footer a:hover {
 
 /* CELULAR */
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
 
     header {
         padding: 0 20px;
@@ -791,7 +791,7 @@ footer a:hover {
 
 /* CELULAR */
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
 
     .titulo-secciones h1 {
         font-size: 30px;
@@ -3531,3 +3531,718 @@ a.boton-secciones {
         font-size: 35px;
     }
 }
+
+/* =================================
+   EQUIPAMIENTO PARA ARRASTRADORAS
+================================= */
+
+.arrastradoras {
+    background-color: #ffffff;
+    padding: 90px 8%;
+}
+
+.arrastradoras-contenido {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.arrastradoras-etiqueta {
+    display: inline-block;
+    background-color: #C6FF20;
+    color: #171BB5;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    padding: 9px 15px;
+    margin-bottom: 20px;
+}
+
+.arrastradoras h2 {
+    color: #171BB5;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 48px;
+    margin: 0 0 20px;
+}
+
+.arrastradoras-intro {
+    max-width: 750px;
+    color: #444444;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+.arrastradoras-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    align-items: center;
+    margin: 45px 0 65px;
+}
+
+.arrastradoras-texto h3,
+.arrastradoras-subtitulo {
+    color: #171BB5;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 28px;
+    margin-bottom: 22px;
+}
+
+.arrastradoras-texto ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.arrastradoras-texto li {
+    color: #444444;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+.arrastradoras-texto li strong {
+    color: #171BB5;
+}
+
+.arrastradoras-imagen {
+    width: 100%;
+    height: 390px;
+    overflow: hidden;
+}
+
+.arrastradoras-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.arrastradoras-subtitulo {
+    margin-bottom: 15px;
+}
+
+.arrastradoras-marcas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 35px;
+}
+
+.marca-card {
+    background-color: #f3f3f3;
+    padding: 28px 24px;
+    border-top: 4px solid #171BB5;
+    min-height: 155px;
+}
+
+.marca-card.marca-destacada {
+    background-color: #171BB5;
+    border-top: 4px solid #C6FF20;
+}
+
+.marca-card h4 {
+    color: #171BB5;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 27px;
+    margin: 0 0 12px;
+}
+
+.marca-card.marca-destacada h4 {
+    color: #ffffff;
+}
+
+.marca-card span {
+    display: inline-block;
+    color: #C6FF20;
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.marca-card p {
+    color: #444444;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.marca-card.marca-destacada p {
+    color: #ffffff;
+}
+
+.arrastradoras-consejo {
+    background-color: #C6FF20;
+    color: #171BB5;
+    padding: 22px 26px;
+    margin-top: 40px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.arrastradoras-consejo strong {
+    font-weight: 800;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+    .arrastradoras-info {
+        grid-template-columns: 1fr;
+    }
+
+    .arrastradoras-marcas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .arrastradoras-imagen {
+        height: 350px;
+    }
+}
+
+@media (max-width: 600px) {
+    .arrastradoras {
+        padding: 60px 6%;
+    }
+
+    .arrastradoras h2 {
+        font-size: 36px;
+    }
+
+    .arrastradoras-marcas {
+        grid-template-columns: 1fr;
+    }
+
+    .arrastradoras-imagen {
+        height: 260px;
+    }
+}
+
+/* ==========================================
+   HOCKEY LAB - DISEÑO RESPONSIVE
+   CELULAR: hasta 600px
+   TABLET: 601px a 1024px
+   DESKTOP: desde 1025px
+========================================== */
+
+
+/* ==========================================
+   CELULAR
+========================================== */
+
+@media (max-width: 600px) {
+
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* HEADER Y NAVEGACIÓN */
+
+    header {
+        height: auto;
+        min-height: 65px;
+        padding: 15px 5%;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    header nav {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px 16px;
+    }
+
+    header nav a {
+        font-size: 10px;
+    }
+
+    .logo img {
+        width: 105px;
+    }
+
+    /* INICIO */
+
+    .portada {
+        min-height: 390px;
+        padding: 55px 7%;
+    }
+
+    .portada h1 {
+        font-size: 40px;
+    }
+
+    .portada p {
+        font-size: 13px;
+    }
+
+    .presentacion {
+        padding: 35px 6% 25px;
+    }
+
+    .presentacion h1 {
+        font-size: 30px;
+    }
+
+    .fotos {
+        grid-template-columns: repeat(2, 1fr);
+        height: auto;
+    }
+
+    .fotos img {
+        height: 135px;
+    }
+
+    .como-usar {
+        width: 92%;
+        padding: 24px 18px;
+    }
+
+    .como-usar h2 {
+        font-size: 24px;
+    }
+
+    .tarjetas,
+    .articulos {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .tarjeta img {
+        height: 170px;
+    }
+
+    .explora {
+        grid-template-columns: 1fr;
+    }
+
+    .explora-imagen img {
+        height: 170px;
+    }
+
+    .explora-texto {
+        min-height: 115px;
+    }
+
+    .siguiente h2 {
+        font-size: 23px;
+    }
+
+    /* SECCIONES */
+
+    .titulo-secciones h1,
+    .sobre-titulo h1,
+    .contacto-titulo h1 {
+        font-size: 31px;
+    }
+
+    .lista-secciones {
+        width: 90%;
+    }
+
+    .item-seccion {
+        padding: 18px;
+        gap: 14px;
+    }
+
+    .item-seccion h2 {
+        font-size: 18px;
+    }
+
+    .item-seccion p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    /* SOBRE NOSOTROS */
+
+    .sobre-intro,
+    .sobre-objetivo {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .sobre-texto,
+    .sobre-frase,
+    .sobre-objetivo > div {
+        width: 100%;
+    }
+
+    .sobre-frase {
+        padding: 25px;
+    }
+
+    .sobre-problema {
+        padding: 45px 7%;
+    }
+
+    /* CONTACTO */
+
+    .contacto-contenido {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .contacto-info,
+    .formulario {
+        width: 100%;
+    }
+
+    .formulario {
+        padding: 25px 20px;
+    }
+
+    /* FOOTER */
+
+    footer {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 25px;
+    }
+
+    /* PÁGINAS INTERNAS */
+
+    .movilidad-header,
+    .prevencion-header,
+    .recuperacion-header {
+        padding: 18px 5%;
+        justify-content: center;
+    }
+
+    .movilidad-header nav,
+    .prevencion-header nav,
+    .recuperacion-header nav {
+        width: 100%;
+        justify-content: center;
+        gap: 12px 15px;
+    }
+
+    .movilidad-header nav a,
+    .prevencion-header nav a,
+    .recuperacion-header nav a {
+        font-size: 10px;
+    }
+
+    /* PORTADAS */
+
+    .movilidad-portada,
+    .prevencion-portada,
+    .recuperacion-portada {
+        padding: 48px 6%;
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .movilidad-portada h1 {
+        font-size: 42px;
+    }
+
+    .prevencion-portada-imagen img,
+    .recuperacion-portada-imagen img {
+        height: 240px;
+    }
+
+    /* INTRODUCCIONES */
+
+    .movilidad-intro,
+    .prevencion-intro,
+    .recuperacion-intro {
+        padding: 52px 7%;
+    }
+
+    /* GRILLAS DE CONTENIDO */
+
+    .movilidad-grid,
+    .consejos-grid,
+    .prepartido-grid,
+    .prevencion-grid,
+    .prevencion-alerta-grid,
+    .prevencion-rutina-grid,
+    .recuperacion-grid,
+    .recuperacion-herramientas-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .movilidad-card img,
+    .prevencion-card img,
+    .recuperacion-card img,
+    .recuperacion-herramienta img {
+        height: 210px;
+    }
+
+    /* BLOQUES CON DOS COLUMNAS */
+
+    .movilidad-activacion,
+    .prevencion-habitos,
+    .recuperacion-guia,
+    .recuperacion-sueno {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 28px;
+        padding: 52px 7%;
+    }
+
+    .activacion-lista {
+        width: 100%;
+    }
+
+    .recuperacion-sueno-imagen img {
+        height: 250px;
+    }
+
+    /* EQUIPAMIENTO */
+
+    .equipamiento-grid,
+    .equipamiento-recomendaciones,
+    .equipamiento-eleccion-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .equipamiento-selector {
+        padding: 24px 18px;
+    }
+
+    .equipamiento-selector select,
+    .equipamiento-selector button {
+        width: 100%;
+        max-width: none;
+    }
+
+    /* ARRASTRADORAS */
+
+    .arrastradoras {
+        padding: 50px 6%;
+    }
+
+    .arrastradoras h2 {
+        font-size: 35px;
+    }
+
+    .arrastradoras-info {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .arrastradoras-imagen {
+        height: 240px;
+    }
+
+    .arrastradoras-marcas {
+        grid-template-columns: 1fr;
+    }
+
+    .arrastradoras-consejo {
+        padding: 20px;
+    }
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (min-width: 601px) and (max-width: 1024px) {
+
+    /* HEADER */
+
+    header {
+        padding: 0 4%;
+    }
+
+    header nav {
+        gap: 18px;
+    }
+
+    header nav a {
+        font-size: 11px;
+    }
+
+    /* INICIO */
+
+    .portada {
+        min-height: 440px;
+    }
+
+    .portada h1 {
+        font-size: 48px;
+    }
+
+    .fotos {
+        grid-template-columns: repeat(4, 1fr);
+        height: 190px;
+    }
+
+    .fotos img {
+        height: 190px;
+    }
+
+    .como-usar {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .tarjetas,
+    .articulos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* SECCIONES */
+
+    .lista-secciones {
+        width: 88%;
+    }
+
+    /* SOBRE NOSOTROS Y CONTACTO */
+
+    .sobre-intro,
+    .contacto-contenido {
+        width: 88%;
+        gap: 28px;
+    }
+
+    .sobre-problema {
+        padding: 55px 9%;
+    }
+
+    .formulario {
+        padding: 28px;
+    }
+
+    /* FOOTER */
+
+    footer {
+        grid-template-columns: 2fr 1fr;
+        gap: 28px;
+    }
+
+    /* PORTADAS INTERNAS */
+
+    .movilidad-portada,
+    .prevencion-portada,
+    .recuperacion-portada {
+        grid-template-columns: 1fr 1fr;
+        padding: 55px 6%;
+        gap: 28px;
+    }
+
+    .prevencion-portada-imagen img,
+    .recuperacion-portada-imagen img {
+        height: 300px;
+    }
+
+    /* GRILLAS */
+
+    .movilidad-grid,
+    .prevencion-grid,
+    .recuperacion-grid,
+    .equipamiento-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .consejos-grid,
+    .prepartido-grid,
+    .prevencion-alerta-grid,
+    .prevencion-rutina-grid,
+    .recuperacion-herramientas-grid,
+    .equipamiento-eleccion-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* BLOQUES CON DOS COLUMNAS */
+
+    .movilidad-activacion,
+    .prevencion-habitos,
+    .recuperacion-guia,
+    .recuperacion-sueno {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    /* ARRASTRADORAS */
+
+    .arrastradoras-info {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+
+    .arrastradoras-imagen {
+        height: 300px;
+    }
+
+    .arrastradoras-marcas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* ==========================================
+   DESKTOP
+========================================== */
+
+@media (min-width: 1025px) {
+
+    .lista-secciones {
+        max-width: 1100px;
+    }
+
+    .sobre-intro,
+    .sobre-objetivo,
+    .contacto-contenido {
+        max-width: 1100px;
+    }
+
+    .movilidad-page,
+    .prevencion-page,
+    .recuperacion-page {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .movilidad-grid,
+    .prevencion-grid,
+    .recuperacion-grid,
+    .equipamiento-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .consejos-grid,
+    .equipamiento-eleccion-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .prepartido-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .prevencion-alerta-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .recuperacion-herramientas-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .equipamiento-recomendaciones {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .arrastradoras-marcas {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
